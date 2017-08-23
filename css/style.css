@@ -5,3 +5,8 @@ body {
     background-size: contain;
     background-position: center;
 }
+
+.pic img {
+    height: 100%;
+    width: 100%;
+}
