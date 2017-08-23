@@ -1,1 +1,7 @@
-d
+body {
+    background-image: url(/cu/ultimate/images/uplo_crest.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+}
