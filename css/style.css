@@ -1,3 +1,10 @@
+@media only screen and (min-width: 760px) {
+    .columns {
+	display: flex;
+	align-items: center;
+    }
+}
+
 @media only screen and (min-width: 700px) {
     body {
 	background-image: url(/cu/ultimate/images/uplo_crest.png);
@@ -20,7 +27,7 @@
     font-size: 120%;
 }
 
-@media only screen and (min-width: 760px) {
+/*@media only screen and (min-width: 760px) {
     #map {
 	width:47.5%;
 	height:400px;
@@ -34,7 +41,7 @@
 	margin-right: 3%;
 	height: 400px;
     }
-}
+}*/
 
 .button {
     background-color: #76B3DF;
