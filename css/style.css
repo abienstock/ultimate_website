@@ -61,6 +61,7 @@
 
 .button:active {
     text-decoration: none;
+    padding: 1% 1% 1% 1%;
 }
 
 @media (max-width: 760px) {
