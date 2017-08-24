@@ -1,15 +1,21 @@
 myMap = function(){
-    var myLatLng = {lat: 40.872454, lng: -73.915710};
+    var bakerLatLng = {lat: 40.872454, lng: -73.915710};
     var mapOptions = {
-	center: myLatLng,
+	center: bakerLatLng,
 	zoom: 14,
 	mapTypeId: google.maps.MapTypeId.MAP
     }
     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
     var marker = new google.maps.Marker({
-	    position: myLatLng,
+	    position: bakerLatLng,
 	    map: map,
-	    title: 'Baker Athletic Complex'
+	    label: "A"
+	});
+    var subwayLatLng = {lat: 40.869589, lng: -73.915231};
+    var marker = new google.maps.Marker({
+	    position: subwayLatLng,
+	    map: map,
+	    label: "B"
 	});
 }
 $(document).ready(function() {
