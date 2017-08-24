@@ -1,9 +1,14 @@
-body {
-    background-image: url(/cu/ultimate/images/uplo_crest.png);
-    background-position: 50% 20px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
+@media only screen and (min-width: 760px) {
+    body {
+	background-image: url(/cu/ultimate/images/uplo_crest.png);
+	background-position: 50% 20px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: contain;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+    }
 }
 
 .pic img {
