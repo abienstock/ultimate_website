@@ -1,12 +1,16 @@
 body {
     background-image: url(/cu/ultimate/images/uplo_crest.png);
+    background-position: 50% 20px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
-    background-position: center;
 }
 
 .pic img {
     height: 100%;
     width: 100%;
+}
+
+.text {
+    font-size: 120%;
 }
