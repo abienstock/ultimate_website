@@ -19,8 +19,6 @@
   <script src="/cu/ultimate/js/bootstrap.min.js"></script>
 
   <script src="/cu/ultimate/js/app.js"></script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDre5s74Cf4d7fL7CSFDjE8AeH2v1bFYwE"></script>
 </head>
 
 <body>
@@ -37,10 +35,13 @@ competition, while never losing sight of our love for the game and each other.
 	</p>
       </div>
       <div class = "col-md-12">
-	<div class = "embed-responsive embed-responsive-16by9">
-	  <iframe class = "embed-responsive-item" src="https://www.youtube.com/embed/Il1fG4-cbY8" allowfullscreen></iframe>
+	<div class = "embed-responsive embed-responsive-16by9" id = "video">
+	  <iframe id = "player" src="https://www.youtube.com/embed/Il1fG4-cbY8?enablejsapi=1" allowfullscreen></iframe>
 	</div>
-	<!-- <img src = "/cu/ultimate/images/teamphotohighres.jpg">-->
+	<div id = "team_pic" style = "display: none">
+	  <img src = "/cu/ultimate/images/teamphotohighres.jpg" style = "height: 100%; width: 100%">
+	  <img src = "/cu/ultimate/images/replay_arrow.png" id = "img_button">
+	</div>
       </div>
     </div>
     <hr>
@@ -134,7 +135,7 @@ Rise Up!
 	<p class = "text" style = "margin-bottom: 5%">
 In addition, please consider pressing the button below to give a donation towards tournament fees and travel!
 	</p>
-	<center><a href = "http://www.columbia.edu/cu/ultimate/donations.html" id = "button">Donate!</a></center>
+	<center><a href = "http://www.columbia.edu/cu/ultimate/donations.html" id = "donate_button">Donate!</a></center>
 	<p style = "margin-bottom: 4%"></p>
       </div>
       <div class = "col-md-6 pic" id = "neil_pic">

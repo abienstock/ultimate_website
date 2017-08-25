@@ -27,23 +27,7 @@
     font-size: 120%;
 }
 
-/*@media only screen and (min-width: 760px) {
-    #map {
-	width:47.5%;
-	height:400px;
-	margin-left:1.3%;
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    #map {
-	margin-left: 3%;
-	margin-right: 3%;
-	height: 400px;
-    }
-}*/
-
-#button{
+#donate_button{
     background-color: #76B3DF;
     color: white;
     padding: 2% 2%;
@@ -54,30 +38,30 @@
 }
 
 @media only screen and (max-width: 760px) {
-    #button {
+    #donate_button {
 	border-right: 5px solid #39566C;
 	border-bottom: 5px solid #39566C;
     }
 }
 
 @media only screen and (min-width: 760px) {
-    #button {
+    #donate_button {
 	border-right: 3px solid #39566C;
 	border-bottom: 3px solid #39566C;
     }
     
-    #button:hover {
+    #donate_button:hover {
 	border-bottom: 5px solid #39566C;
 	border-right: 5px solid #39566C;
     }
 }
 
-#button:hover {
+#donate_button:hover {
     color: white;
     text-decoration: none;
 }
 
-#button:active {
+#donate_button:active {
     text-decoration: none;
     border-right: 3px solid #39566C;
     border-bottom: 3px solid #39566C;
@@ -89,8 +73,10 @@
     }   
 }
 
-/*@media only screen and (min-width: 760px) {
-    #neil_pic {
-	margin-top: 3%;
-    }   
-}*/
+#img_button {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    width: 5%;
+    cursor: pointer;
+}

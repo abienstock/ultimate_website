@@ -1,25 +1,37 @@
 document.addEventListener("touchstart", function() {}, false);
-/*myMap = function(){
-    var bakerLatLng = {lat: 40.872454, lng: -73.915710};
-    var mapOptions = {
-	center: bakerLatLng,
-	zoom: 14,
-	mapTypeId: google.maps.MapTypeId.MAP
-    }
-    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-    var marker = new google.maps.Marker({
-	    position: bakerLatLng,
-	    map: map,
-	    label: "A"
-	});
-    var subwayLatLng = {lat: 40.869589, lng: -73.915231};
-    var marker = new google.maps.Marker({
-	    position: subwayLatLng,
-	    map: map,
-	    label: "B"
+
+var tag = document.createElement('script');
+tag.id = 'iframe';
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+	    events: {
+		'onReady': onPlayerReady,
+		'onStateChange': onPlayerStateChange
+	    }
 	});
 }
-$(document).ready(function() {
-	myMap();
-})
-*/
+
+function onPlayerReady(event) {
+
+}
+
+
+function onPlayerStateChange(event) {
+    if (event.data === 0) {
+	var vid = document.getElementById('video');
+	var img = document.getElementById('team_pic');
+	vid.style.display = 'none';
+	img.style.display = 'inline';
+	var button = document.getElementById('img_button');
+	button.onclick= function() {
+	    img.style.display = 'none';
+	    vid.style.display = 'block';
+	}
+    }
+}
+
