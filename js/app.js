@@ -1,4 +1,5 @@
-myMap = function(){
+document.addEventListener("touchstart", function() {}, false);
+/*myMap = function(){
     var bakerLatLng = {lat: 40.872454, lng: -73.915710};
     var mapOptions = {
 	center: bakerLatLng,
@@ -21,3 +22,4 @@ myMap = function(){
 $(document).ready(function() {
 	myMap();
 })
+*/
