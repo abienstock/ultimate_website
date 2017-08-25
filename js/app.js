@@ -31,6 +31,7 @@ function onPlayerStateChange(event) {
 	button.onclick= function() {
 	    img.style.display = 'none';
 	    vid.style.display = 'block';
+	    player.seekTo(0);
 	}
     }
 }
